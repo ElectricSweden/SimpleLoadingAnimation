@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #101010;
+    overflow: hidden;
+}
+
+.object {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30vh;
+    width: 60vh;
+    height: 60vh;
+    background-color: blue;
+    animation: move 5s linear;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.text {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes move {
+    0% {
+        background-color: crimson;
+        left: 0px;
+        top: 0px;
+    }
+
+    12% {
+        background-color: cornflowerblue;
+        position: absolute;
+        left: 700px;
+        top: 0px;
+    }
+
+    24% {
+        background-color: crimson;
+        left: 500px;
+        top: 200px;
+    }
+
+    36% {
+        background-color: cornflowerblue;
+        left: 900px;
+        top: 300px;
+        transform: rotate(400deg);
+    }
+
+    48% {
+        background-color: crimson;
+        left: 1000px;
+        top: 0px;
+    }
+
+    60% {
+        background-color: cornflowerblue;
+        left: 1200px;
+        top: 400px;
+    }
+
+    72% {
+        background-color: crimson;
+        left: 800px;
+        top: 300px;
+        transform: rotate(720deg);
+    }
+
+    84% {
+        background-color: cornflowerblue;
+        left: 300px;
+        top: 300px;
+    }
+
+
+    100% {
+        background-color: crimson;
+        left: 0px;
+        top: 0px;
+    }
+}
