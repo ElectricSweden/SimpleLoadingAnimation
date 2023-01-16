@@ -13,8 +13,7 @@
     width: 60vh;
     height: 60vh;
     background-color: blue;
-    animation: move 5s linear;
-    animation-iteration-count: infinite;
+    animation: move 5s  ease-in-out infinite alternate;
     position: absolute;
 }
 
